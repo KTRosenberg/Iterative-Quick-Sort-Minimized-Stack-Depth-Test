@@ -107,7 +107,7 @@ int quick_sort_iterative(int64_t lower, int64_t upper, int64_t A[], char stack_d
         if(stack_display)print_stack(stack);
         
         range_t* curr_range = NULL;
-        int64_t pivot, l_marker, r_marker = 0;
+        int64_t pivot = 0, l_marker = 0, r_marker = 0;
 
         if((curr_range = pop(&stack)))
         {
@@ -193,7 +193,7 @@ int quick_sort_iterative_deeper_stack(int64_t lower, int64_t upper, int64_t A[],
         if(stack_display)print_stack(stack);
         
         range_t* curr_range = NULL;
-        int64_t pivot, l_marker, r_marker, temp = 0;
+        int64_t pivot = 0, l_marker = 0, r_marker = 0, temp = 0;
 
         if((curr_range = pop(&stack)))
         {
@@ -290,7 +290,7 @@ range_t* push(int64_t lower, int64_t upper, range_t** stack)
 
 range_t* pop(range_t** stack)
 {
-    if(!stack || !(*stack)) return NULL;
+    if(!stack || !(*stack))return NULL;
     
     range_t* to_remove = *stack;
     *stack = (to_remove)->next;
