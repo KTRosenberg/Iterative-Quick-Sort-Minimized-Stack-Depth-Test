@@ -6,4 +6,4 @@ qs :
 	$(CC) $(CFLAGS) -o qs $(FILE1)
 
 clean :
-	-rm -f *.o *.core qs qs
+	-rm -f *.o *.core qs
