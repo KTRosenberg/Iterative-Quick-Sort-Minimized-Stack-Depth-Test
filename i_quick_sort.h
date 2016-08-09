@@ -1,6 +1,7 @@
 /*
     Karl Toby Rosenberg
     Iterative Quick Sort Test, Minimal Stack Depth
+    Inspired by Professor Siegel's algorithms course
 */
 
 #include <stdio.h>
